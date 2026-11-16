@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Datasets & Models
+*.csv
+*.zip
+*.parquet
+data/
+*.pkl
+*.joblib
+.ipynb_checkpoints/
