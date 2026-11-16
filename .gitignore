@@ -219,11 +219,49 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Datasets & Models
-*.csv
-*.zip
-*.parquet
+# Datasets
 data/
+*.csv
+*.tsv
+*.zip
+*.7z
+*.gz
+*.tar
+*.parquet
+*.feather
+*.npy
+*.npz
 *.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# Models & experiment artifacts
+models/
+checkpoints/
 *.joblib
-.ipynb_checkpoints/
+*.model
+*.xgb
+*.lgb
+*.cbm
+*.pt
+*.pth
+*.ckpt
+*.onnx
+catboost_info/
+mlruns/
+wandb/
+lightning_logs/
+
+# Credentials
+kaggle.json
+.kaggle/
+
+# Spark scratch (if you process user_logs with PySpark)
+spark-warehouse/
+metastore_db/
+derby.log
+
+# OS files
+.DS_Store
+Thumbs.db
